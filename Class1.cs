@@ -97,6 +97,7 @@ namespace Worker
     {
         public void Execute(IJobExecutionContext context)
         {
+            Console.WriteLine(" [x] Execute");
 
             // Let's start simple, write to the console
             Console.WriteLine("Hello World 3600! " + DateTime.Now.ToString("h:mm:ss tt"));
