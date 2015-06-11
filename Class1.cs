@@ -128,7 +128,7 @@ namespace ConsoleApplication1
             //            var message = Encoding.UTF8.GetString(body);
             //            Console.WriteLine(" [x] Received {0}", message);
             //        }
-            //    }
+            //    } 
             //}
          }
     }
