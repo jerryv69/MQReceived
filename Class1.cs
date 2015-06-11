@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
+//using RabbitMQ.Client;
+//using RabbitMQ.Client.Events;
 
 namespace ConsoleApplication1
 {
