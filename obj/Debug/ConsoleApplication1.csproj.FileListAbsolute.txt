@@ -1,8 +1,0 @@
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\bin\Debug\RabbitMQ.Client.dll
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\bin\Debug\RabbitMQ.Client.xml
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-F:\Dev\MQ\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
