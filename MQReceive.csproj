@@ -55,12 +55,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="bin\Debug\ConsoleApplication1.exe.config" />
+    <None Include="bin\Debug\ConsoleApplication1.vshost.exe.config" />
+    <None Include="bin\Debug\ConsoleApplication1.vshost.exe.manifest" />
     <None Include="packages.config" />
     <None Include="packages\Common.Logging.2.1.2\Common.Logging.2.1.2.nupkg" />
     <None Include="packages\Quartz.2.1.2\Quartz.2.1.2.nupkg" />
@@ -69,6 +75,16 @@
     <None Include="packages\repositories.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Common.Logging.dll" />
+    <Content Include="bin\Debug\Common.Logging.pdb" />
+    <Content Include="bin\Debug\Common.Logging.xml" />
+    <Content Include="bin\Debug\ConsoleApplication1.exe" />
+    <Content Include="bin\Debug\ConsoleApplication1.pdb" />
+    <Content Include="bin\Debug\ConsoleApplication1.vshost.exe" />
+    <Content Include="bin\Debug\Quartz.dll" />
+    <Content Include="bin\Debug\Quartz.pdb" />
+    <Content Include="bin\Debug\Quartz.xml" />
+    <Content Include="bin\Debug\RabbitMQ.Client.dll" />
     <Content Include="packages\Common.Logging.2.1.2\lib\net35\Common.Logging.dll" />
     <Content Include="packages\Common.Logging.2.1.2\lib\net35\Common.Logging.pdb" />
     <Content Include="packages\Common.Logging.2.1.2\lib\net35\Common.Logging.xml" />
