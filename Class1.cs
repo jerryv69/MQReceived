@@ -21,7 +21,7 @@ namespace ConsoleApplication1
         private static IJobDetail _emailJobDetail;
 
         static Program()
-        {
+        {  
 
             // Create a regular old Quartz scheduler
             SchedulerFactory = new StdSchedulerFactory();
