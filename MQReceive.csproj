@@ -83,7 +83,6 @@
     <Content Include="bin\Debug\ConsoleApplication1.vshost.exe" />
     <Content Include="bin\Debug\Quartz.dll" />
     <Content Include="bin\Debug\Quartz.pdb" />
-    <Content Include="bin\Debug\Quartz.xml" />
     <Content Include="bin\Debug\RabbitMQ.Client.dll" />
     <Content Include="packages\Common.Logging.2.1.2\lib\net35\Common.Logging.dll" />
     <Content Include="packages\Common.Logging.2.1.2\lib\net35\Common.Logging.pdb" />
