@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-//using RabbitMQ.Client;
-//using RabbitMQ.Client.Events;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace ConsoleApplication1
 {
@@ -56,7 +56,7 @@ namespace ConsoleApplication1
             _emailJobDetail = JobBuilder.Create<EmailJob>()
                 .WithIdentity("SendToMyself")   // Here we can assign a friendly name to our job        
                 .Build();                       // And now we build the job detail
-
+             
         }
 
         private static void ScheduleJob()
@@ -99,37 +99,37 @@ namespace ConsoleApplication1
         {
             Console.WriteLine(" [x] Execute");
 
-            //// Let's start simple, write to the console
-            //Console.WriteLine("Hello World 3600! " + DateTime.Now.ToString("h:mm:ss tt"));
-            //ConnectionFactory connFactory = new ConnectionFactory
-            //{
-            //    // AppSettings["CLOUDAMQP_URL"] contains the connection string
-            //    // when you've added the CloudAMQP Addon
-            //    //Uri = System.Configuration.ConfigurationManager.AppSettings["CLOUDAMQP_URL"];
-            //    Uri = "amqp://rryotcdm:DPRstPbeaC4SNGsFKzhrJR0MaTfw-rEB@owl.rmq.cloudamqp.com/rryotcdm"
-            //};
+            // Let's start simple, write to the console
+            Console.WriteLine("Hello World 3600! " + DateTime.Now.ToString("h:mm:ss tt"));
+            ConnectionFactory connFactory = new ConnectionFactory
+            {
+                // AppSettings["CLOUDAMQP_URL"] contains the connection string
+                // when you've added the CloudAMQP Addon
+                //Uri = System.Configuration.ConfigurationManager.AppSettings["CLOUDAMQP_URL"];
+                Uri = "amqp://rryotcdm:DPRstPbeaC4SNGsFKzhrJR0MaTfw-rEB@owl.rmq.cloudamqp.com/rryotcdm"
+            };
 
-            //using (var connection = connFactory.CreateConnection())
-            //{
-            //    using (var channel = connection.CreateModel())
-            //    {
-            //        channel.QueueDeclare("queue1", false, false, false, null);
+            using (var connection = connFactory.CreateConnection())
+            {
+                using (var channel = connection.CreateModel())
+                {
+                    channel.QueueDeclare("queue1", false, false, false, null);
 
-            //        var consumer = new QueueingBasicConsumer(channel);
-            //        channel.BasicConsume("queue1", true, consumer);
+                    var consumer = new QueueingBasicConsumer(channel);
+                    channel.BasicConsume("queue1", true, consumer);
 
-            //        Console.WriteLine(" [*] Waiting for messages." +
-            //                                 "To exit press CTRL+C");
-            //        while (true)
-            //        {
-            //            var ea = (BasicDeliverEventArgs)consumer.Queue.Dequeue();
+                    Console.WriteLine(" [*] Waiting for messages." +
+                                             "To exit press CTRL+C");
+                    while (true)
+                    {
+                        var ea = (BasicDeliverEventArgs)consumer.Queue.Dequeue();
 
-            //            var body = ea.Body;
-            //            var message = Encoding.UTF8.GetString(body);
-            //            Console.WriteLine(" [x] Received {0}", message);
-            //        }
-            //    } 
-            //}
+                        var body = ea.Body;
+                        var message = Encoding.UTF8.GetString(body);
+                        Console.WriteLine(" [x] Received {0}", message);
+                    }
+                }
+            }
          }
     }
 }
