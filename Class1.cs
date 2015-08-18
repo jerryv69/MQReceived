@@ -13,7 +13,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
 namespace ConsoleApplication1
-{
+{ 
     class Program
     {
         private static readonly ISchedulerFactory SchedulerFactory;
